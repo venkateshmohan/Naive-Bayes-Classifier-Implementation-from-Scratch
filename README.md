@@ -1,4 +1,4 @@
-# Naive-Bayes-Classifier-Implementation-from-Scratch
+# Naive-Bayes-Text-Classifier-Implementation-from-Scratch
 The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 diﬀerent newsgroups.
 The data is organized into 20 diﬀerent newsgroups, each corresponding to a diﬀerent topic. Here is a list of the 20 newsgroups:
 alt.atheism comp.graphics 
@@ -27,3 +27,8 @@ For each target value ωj (each newsgroup)
                 -Calculate nk: number of times word wk occurs in all documents in class ωj. 
                 -Calculate Maximum Likelihood estimator PMLE(wk|ωj) = nk/n 
                             Bayesian estimator PBE(wk|ωj) = nk+1/n+|V ocabulary| (this is Laplace estimate).
+    
+NaiveBayes.py is the implementation code of Naive Bayes text classification on training dataset using Bayesian Estimation.
+testing.py is the implementation code of Naive Bayes text classification on testing dataset using Bayesian estimation and maximum likelihood estimation.
+
+The accuracy obtained on training data is 94.72% whereas on testing data the accuracy is 85.4% using Bayesian estimation and on testing data using Maximum likelihood estimation, the accuracy is 23%.
